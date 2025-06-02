@@ -35,6 +35,10 @@ sentence=input ()
 words = word_tokenize(sentence)
 # Identify the parts of speech for each word
 pos_tags= nltk.pos_tag(words)
+
+for word, tag in pos_tags:
+    print(word, tag)
+
 from nltk.corpus import wordnet
 
 # Identify synonyms and antonyms for each word
